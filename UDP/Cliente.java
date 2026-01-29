@@ -29,7 +29,6 @@ public class Cliente {
             } catch (Exception ignored) {}
         }).start();
 
-
         enviar(socket, serverIP, serverPort, nombre + "|(se ha conectado)");
 
         while (true) {
