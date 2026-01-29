@@ -35,8 +35,6 @@ public class Server {
             InetAddress ip = recibido.getAddress();
             int puerto = recibido.getPort();
 
-            // Formato esperado: "NOMBRE|mensaje"
-            // Ej: "Cliente 1|Hola"
             String[] partes = msg.split("\\|", 2);
             if (partes.length != 2) continue;
 
@@ -49,6 +47,7 @@ public class Server {
                 if (c.ip.equals(ip) && c.puerto == puerto) {
                     actual = c;
                     break;
+
                 }
             }
 
