@@ -70,7 +70,6 @@ public class Cliente {
             e.printStackTrace();
         }
     }
-
     public static void main(String[] args) throws IOException {
         Scanner teclado = new Scanner(System.in);
         System.out.print("Introduce tu nombre: ");
