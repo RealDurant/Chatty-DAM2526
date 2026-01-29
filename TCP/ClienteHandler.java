@@ -81,6 +81,7 @@ public class ClienteHandler implements Runnable {
             if (socket != null) socket.close();
         } catch (IOException e) {
             e.printStackTrace();
+
         }
     }
 }
